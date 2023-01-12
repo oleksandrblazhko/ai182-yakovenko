@@ -80,4 +80,4 @@
 
 21. Повторіть крок 20.
 
-![image](https://github.com/oleksandrblazhko/ai182-yakovenko/blob/laboratory-work-7/Laboratory-work-7/images/21.png)
+![image](https://github.com/oleksandrblazhko/ai182-yakovenko/blob/laboratory-work-7/Laboratory-work-7/images/f21.png)
