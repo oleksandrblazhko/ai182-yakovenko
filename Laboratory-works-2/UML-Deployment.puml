@@ -1,0 +1,45 @@
+@startuml
+
+title Deployment diagram
+
+left to right direction
+
+skinparam componentStyle uml1
+
+node "<<Desktop>>" as dk {
+    node "<<Operating System Windows/Linux>>" {
+        node "<<Web Browser>>" {
+            component [*.js]
+        }
+    }
+}
+
+interface Keyboard
+
+interface Mouse
+
+interface Microphone
+
+Keyboard -- dk
+
+Mouse -- dk
+
+Microphone-- dk
+
+node "<<Web Server>>" as serv1 {
+	node "<<Operating System Linux>>" as l1 {
+	    component [Java Application Server]
+	}
+}
+
+dk -- serv1
+
+node "<<Database Server>>" as serv2 {
+	node "<<Operating System Linux>>" as l2 {
+		database PostgreSQL
+	}
+}
+
+serv1 -- serv2
+
+@enduml
